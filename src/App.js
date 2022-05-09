@@ -8,7 +8,7 @@ function App() {
       <Main>
         <Presentations />
       </Main>
-      <Footer>Footer</Footer>
+      <Footer>&copy; HTTP Alapítvány</Footer>
     </Body>
   );
 }

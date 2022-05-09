@@ -39,6 +39,7 @@ const presentations = [
 const Presentations = () => {
   return (
     <Container>
+      <h1>Előadások</h1>
       {presentations.map((presentation, index) => (
         <Presentation presentation={presentation} key={index} />
       ))}
@@ -61,8 +62,7 @@ const Presentation = (props) => {
       <Time> {presentation.startTime} </Time>
       <Title> {presentation.title} </Title>
       <Presenter>
-        {" "}
-        {presentation.presenter.name}, {presentation.presenter.company}, {presentation.presenter.title}{" "}
+        {presentation.presenter.name}, {presentation.presenter.company}, {presentation.presenter.title}
         <div>
           <img src={presentation.presenter.photo} alt={presentation.presenter.name}/>
         </div>
